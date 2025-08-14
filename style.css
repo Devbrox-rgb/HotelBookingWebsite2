@@ -1,0 +1,185 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: lch(100% 0.01 296.81);
+    color: lab(13.23% 0 0);
+}
+
+/* Navigation Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8%;
+    background-color: hsl(0, 0%, 18%);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.brand span {
+    color: hsl(42, 100%, 50%);
+}
+
+.main-nav a {
+    margin-left: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+.main-nav a:hover {
+    color: #fffb00;
+}
+
+.book-btn {
+    background: #ffb400;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.book-btn:hover {
+    background: #e3a300;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: url('hotel.jpg') center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15px;
+    color: #ffffff;
+}
+
+.welcome-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+}
+.welcome-text p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+
+/* Reservation Form */
+.reservation {
+    padding: 45px 10%;
+    background: rgb(255, 255, 255);
+}
+.reservation h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.res-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+.res-form input, 
+.res-form textarea {
+    padding: 10px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.res-form textarea {
+    resize: none;
+    min-height: 70px;
+}
+
+.res-form button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+    background: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+    }
+    .main-nav {
+        margin-top: 8px;
+    }
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #2c3e50;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+

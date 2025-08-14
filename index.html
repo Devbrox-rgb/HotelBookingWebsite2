@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandStay Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header class="topbar">
+        <div class="brand">Grand<span>Stay</span></div>
+        <nav class="main-nav">
+            <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="rooms.html">Rooms</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="contact.html">Contact</a></li>         
+         </li><a href="#reserve" class="book-btn">Book Now</a>  
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-banner">
+        <div class="welcome-text">
+            <h1>Your Luxury Gateway Awaits</h1>
+            <p>Experience comfort like never before</p>
+            <a href="#reserve" class="book-btn">Reserve a Room</a>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="reserve" class="reservation">
+        <h2>Make a Reservation</h2>
+        <form class="res-form">
+            <input type="text" name="fullname" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+
+            <label>Check-In Date</label>
+            <input type="date" name="checkin" required>
+
+            <label>Check-Out Date</label>
+            <input type="date" name="checkout" required>
+
+            <input type="number" name="guests" placeholder="Guests" min="1" required>
+            <textarea name="notes" placeholder="Special Requests"></textarea>
+
+            <button type="submit" class="book-btn">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>© 2025 GrandStay Hotel | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
