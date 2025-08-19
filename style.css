@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,6 @@ body {
     color: #222;
 }
 
-/* Navigation Bar */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -53,9 +51,8 @@ body {
     background: #e3a300;
 }
 
-/* Hero Banner */
 .hero-banner {
-    background: url('hotel.jpg') center/cover no-repeat;
+    background: url('images/hotel.jpg') center/cover no-repeat;
     height: 85vh;
     display: flex;
     align-items: center;
@@ -110,7 +107,7 @@ body {
     cursor: pointer;
 }
 
-/* Footer */
+
 .site-footer {
     background: #2e2e2e;
     color: #fff;
@@ -119,7 +116,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* Mobile Adjustments */
+
 @media (max-width: 768px) {
     .topbar {
         flex-direction: column;
@@ -131,3 +128,227 @@ body {
         font-size: 2rem;
     }
 }
+
+.about-hero {
+  background: url("images/hotellobby.jpg") no-repeat center center/cover;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+.about-content {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.about-content .container {
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.about-content h2 {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.about-content p {
+  margin: 15px 0;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #444;
+  padding-left: 25px;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.contact-hero {
+  background: url("images/Contact.jpg") no-repeat center center/cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.contact-hero .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-content {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.contact-content .container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info h2, .contact-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #005bb5;
+}
+
+.rooms {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.rooms h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rooms p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.room-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.room-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #333;
+}
+
+.room-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+  padding: 0 10px;
+}
+
+.room-card p:nth-of-type(2) {
+  font-weight: bold;
+  color: #e67e22;
+  font-size: 16px;
+}
+
+.room-card button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.3s;
+}
+
+.room-card button:hover {
+  background: #e67e22;
+}
+
+
+
